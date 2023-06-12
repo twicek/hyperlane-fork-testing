@@ -51,7 +51,7 @@ polygon = "${RPC_POLYGON_URL}"
         test_e2e(_destinationDomain, _messageBody, _gasAmount, _gasPayment, _gasPaymentRefundAddress);
     }
 ```
-- In `src/E2ERouter.sol`, and whatever logic you want to be executed on the destination chain:
+- In `src/E2ERouter.sol`, add whatever logic you want to be executed on the destination chain:
 ```solidity
     // This overridden _handle function will be called upon calling process -> handle -> _handle
     function _handle(
