@@ -6,7 +6,7 @@ The goal of this repos is to allow developers integrating with Hyperlane to test
 
 ## How to use
 
-### Close the repos:
+### Clone the repos:
 
 git clone https://github.com/twicek/hyperlane-fork-testing.git
 
