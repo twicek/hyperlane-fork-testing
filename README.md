@@ -2,7 +2,7 @@
 
 ## Overview
 
-The goal of this testing setup is to allow developers that want to integrate with Hyperlane to test their contracts using the real `Mailbox` contracts deployed on local and destination chains. The verification process on the destination chain has been changed to always succeed to allow a focus on dispatch/handling testing.
+The goal of this testing setup is to allow developers that want to integrate with [Hyperlane](https://github.com/hyperlane-xyz) to test their contracts using the real `Mailbox` contracts deployed on local and destination chains. The verification process on the destination chain has been changed to always succeed to allow a focus on dispatch/handling testing.
 
 ## How to use
 
