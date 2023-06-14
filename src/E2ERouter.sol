@@ -16,7 +16,6 @@ contract E2ERouter is Router {
         uint32 _destination,
         bytes memory _messageBody,
         uint256 _gasAmount,
-        uint256 _gasPayment,
         address _gasPaymentRefundAddress
     ) external payable {
         _dispatchWithGas(

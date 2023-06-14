@@ -81,7 +81,7 @@ contract E2ETemplate is Test {
     //     // Call local router contract that call _dispatchWithGas function on the Router
     //     vm.deal(user, 1 ether);
     //     vm.startPrank(user);
-    //     LOCAL_ROUTER.dispatchWithGas{value: _gasPayment}(_destinationDomain, _messageBody, _gasAmount, _gasPayment, _gasPaymentRefundAddress);
+    //     LOCAL_ROUTER.dispatchWithGas{value: _gasPayment}(_destinationDomain, _messageBody, _gasAmount, _gasPaymentRefundAddress);
         
 
     //     // Retrieve message from logs
