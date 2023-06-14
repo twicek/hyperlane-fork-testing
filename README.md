@@ -2,13 +2,15 @@
 
 ## Overview
 
-The goal of this repos is to allow developers integrating with Hyperlane to test their contracts using the real Mailbox contracts deployed on local and destination chains.
+The goal of this testing setup is to allow developers that want to integrate with Hyperlane to test their contracts using the real `Mailbox` contracts deployed on local and destination chains. The verification process on the destination chain has been changed to always succeed to allow a focus on dispatch/handling testing.
 
 ## How to use
 
 ### Clone the repos:
 
+```
 git clone https://github.com/twicek/hyperlane-fork-testing.git
+```
 
 ### Run the example test:
 ```
@@ -17,7 +19,7 @@ forge test --match-test "test_localContract" -vvvvv
 
 ### Customize
 
-To adapt this fork setup to your own use do the following steps:
+To adapt this fork setup to your own use do the following:
 - Add all rpc endpoints that you will use in `foundry.toml` and define their respective rpc url in a `.env` file.
 ```
 [rpc_endpoints]
@@ -41,9 +43,9 @@ polygon = "${RPC_POLYGON_URL}"
 ```
 - Customize/Sanitize inputs as you wish:
 ```solidity
-    // Choose/Sanatize function inputs
+    // Choose/Sanitize function inputs
     function test_localContract() public {
-        uint32 _destinationDomain = 137;
+        uint32 _destinationDomain = 137; // Make sure to change this according to destination domain
         bytes memory _messageBody = abi.encodeWithSignature("answer(uint256)", 42);
         uint256 _gasAmount = 200000;
         uint256 _gasPayment = 1 ether;
